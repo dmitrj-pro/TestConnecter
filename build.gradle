@@ -1,0 +1,13 @@
+
+plugins {
+	id 'application'
+}
+
+
+mainClassName = "php.runtime.launcher.Launcher"
+jar.archiveName = "dn-compiled-module.jar"
+
+
+sourceSets {
+	main.resources.srcDirs = ['src_generated', 'src']
+}
