@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project author="diman-pro" authorOS="Linux" createdAt="1479294613149" ideName="DevelNext" ideVersion="16 rc-1" ideVersionHash="2016092012" name="Connecter" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1479571431437">
+<project author="admin" authorOS="Windows 8.1" createdAt="1480175339006" ideName="DevelNext" ideVersion="16 rc-1" ideVersionHash="2016092012" name="Connecter" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1480175339006">
   <openedFiles>
-  <file src="~project"/>
+    <file src="~project"/>
+    <file src="src/.scripts/MainModule"/>
     <file selected="1" src="src/.forms/MainForm.fxml"/>
-    <file src="src/.scripts/AppModule"/>
   </openedFiles>
   <files>
-  <file inRootDir="1" src="src/app/prototypes"/>
+    <file inRootDir="1" src="src/app/prototypes"/>
     <file inRootDir="1" src="src/.scripts"/>
     <file inRootDir="1" src="src/.system/application.conf"/>
     <file inRootDir="1" src="lib"/>
@@ -45,15 +45,17 @@
     <file inRootDir="1" src="src"/>
     <file inRootDir="1" src="src/.data"/>
     <file inRootDir="1" src="src/.data/img"/>
+    <file inRootDir="1" src="src/.system"/>
     <file inRootDir="1" src="src/app"/>
     <file inRootDir="1" src="src/app/modules"/>
-    <file inRootDir="1" src="src/.system"/>
     <file inRootDir="1" src="src/JPHP-INF"/>
     <file inRootDir="1" src="src_generated"/>
     <file inRootDir="1" src="src/.game/sprites"/>
     <file inRootDir="1" src="build"/>
     <file inRootDir="1" src=""/>
     <file inRootDir="1" src="~project"/>
+    <file inRootDir="1" src="D:/Connecter/src/.forms/MainForm.fxml"/>
+    <file inRootDir="1" src=""/>
     <file inRootDir="1" src="vendor/develnext.bundle.httpclient.HttpClientBundle"/>
     <file inRootDir="1" src="vendor/develnext.bundle.httpclient.HttpClientBundle/bundle/http/HttpResponse.php"/>
     <file inRootDir="1" src="vendor/develnext.bundle.httpclient.HttpClientBundle/bundle/http/HttpAsyncResponse.php"/>
@@ -61,61 +63,42 @@
     <file inRootDir="1" src="vendor/develnext.bundle.httpclient.HttpClientBundle/bundle/http/HttpDownloader.php"/>
     <file inRootDir="1" src="vendor/develnext.bundle.httpclient.HttpClientBundle/bundle/http/HttpChecker.php"/>
     <file inRootDir="1" src="application.pid"/>
+    <file inRootDir="1" src="src_generated"/>
     <file inRootDir="1" src="src/.debug/bootstrap.php"/>
     <file inRootDir="1" src="src/.debug/preloader.php"/>
-    <file inRootDir="1" src="src/.theme/style.css"/>
+    <file inRootDir="1" src="src_generated/.data"/>
+    <file inRootDir="1" src="src_generated/.data/img"/>
     <file inRootDir="1" src="src_generated/.debug"/>
     <file inRootDir="1" src="src_generated/.debug/bootstrap.php"/>
     <file inRootDir="1" src="src_generated/.debug/preloader.php"/>
-    <file inRootDir="1" src="src_generated/.data"/>
-    <file inRootDir="1" src="src_generated/.data/img"/>
+    <file inRootDir="1" src="src_generated/.forms"/>
+    <file inRootDir="1" src="src_generated/.forms/MainForm.conf"/>
+    <file inRootDir="1" src="src_generated/.forms/MainForm.fxml"/>
+    <file inRootDir="1" src="src_generated/.scripts"/>
+    <file inRootDir="1" src="src_generated/.scripts/AppModule"/>
+    <file inRootDir="1" src="src_generated/.scripts/MainModule"/>
+    <file inRootDir="1" src="src_generated/.scripts/MainModule/httpClient.json"/>
+    <file inRootDir="1" src="src_generated/.system"/>
+    <file inRootDir="1" src="src_generated/.system/application.conf"/>
+    <file inRootDir="1" src="src_generated/.system/modules.json"/>
     <file inRootDir="1" src="src_generated/app"/>
     <file inRootDir="1" src="src_generated/app/forms"/>
+    <file inRootDir="1" src="src_generated/app/forms/MainForm.behaviour"/>
     <file inRootDir="1" src="src_generated/app/forms/MainForm.php"/>
     <file inRootDir="1" src="src_generated/app/forms/MainForm.php.axml"/>
-    <file inRootDir="1" src="src_generated/app/forms/MainForm.behaviour"/>
     <file inRootDir="1" src="src_generated/app/modules"/>
-    <file inRootDir="1" src="src_generated/app/modules/AppModule.json"/>
-    <file inRootDir="1" src="src_generated/app/modules/AppModule.php.axml"/>
-    <file inRootDir="1" src="src_generated/app/modules/MainModule.php.axml"/>
     <file inRootDir="1" src="src_generated/app/modules/AppModule.php"/>
     <file inRootDir="1" src="src_generated/app/modules/MainModule.behaviour"/>
     <file inRootDir="1" src="src_generated/app/modules/MainModule.json"/>
     <file inRootDir="1" src="src_generated/app/modules/MainModule.php"/>
-    <file inRootDir="1" src="src_generated/app/modules/AppModule.behaviour"/>
-    <file inRootDir="1" src="src_generated/.scripts"/>
-    <file inRootDir="1" src="src_generated/.scripts/AppModule"/>
-    <file inRootDir="1" src="src_generated/.scripts/MainModule"/>
-    <file inRootDir="1" src="src_generated/.system"/>
-    <file inRootDir="1" src="src_generated/.system/modules.json"/>
-    <file inRootDir="1" src="src_generated/.system/application.conf"/>
-    <file inRootDir="1" src="src_generated/.forms"/>
-    <file inRootDir="1" src="src_generated/.forms/MainForm.fxml"/>
-    <file inRootDir="1" src="src_generated/.forms/MainForm.conf"/>
+    <file inRootDir="1" src="src_generated/app/modules/MainModule.php.axml"/>
     <file inRootDir="1" src="src_generated/JPHP-INF"/>
-    <file inRootDir="1" src="src_generated/JPHP-INF/launcher.conf"/>
     <file inRootDir="1" src="src_generated/JPHP-INF/.bootstrap"/>
+    <file inRootDir="1" src="src_generated/JPHP-INF/launcher.conf"/>
     <file inRootDir="1" src="Connecter.dnproject"/>
-    <file inRootDir="1" src="src/.debug"/>
-    <file inRootDir="1" src="src/app/forms/MainForm.php.axml"/>
-    <file inRootDir="1" src="src/app/forms/MainForm.behaviour"/>
-    <file inRootDir="1" src="src/app/modules/AppModule.json"/>
-    <file inRootDir="1" src="src/app/modules/AppModule.php.axml"/>
-    <file inRootDir="1" src="src/app/modules/MainModule.php.axml"/>
-    <file inRootDir="1" src="src/app/modules/MainModule.behaviour"/>
-    <file inRootDir="1" src="src/app/modules/MainModule.json"/>
-    <file inRootDir="1" src="src/app/modules/AppModule.behaviour"/>
-    <file inRootDir="1" src="res:/ide/project/behaviours/PhpProjectBehaviour.php"/>
-    <file inRootDir="1" src="home/diman-pro/DevelNextProjects/PlatformerGameDemo/src/.forms/Proto.fxml"/>
-    <file inRootDir="1" src="home/diman-pro/DevelNextProjects/tmp/src/.forms/MainForm.fxml"/>
-    <file inRootDir="1" src="lib"/>
-    <file inRootDir="1" src="src"/>
-    <file inRootDir="1" src="build"/>
-    <file inRootDir="1" src="~project"/>
-    <file inRootDir="1" src="home/diman-pro/DevelNextProjects/GetMoney/src/.forms/MainForm.fxml"/>
   </files>
   <behaviours>
-  <behaviour class="ide\project\behaviours\BundleProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\BundleProjectBehaviour"/>
     <behaviour class="ide\project\behaviours\PhpProjectBehaviour"/>
     <behaviour class="ide\project\behaviours\JavaPlatformBehaviour"/>
     <behaviour class="ide\project\behaviours\GuiFrameworkProjectBehaviour"/>

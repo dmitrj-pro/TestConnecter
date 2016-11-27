@@ -1,7 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<behaviours>
-  <target id="button">
-    <behaviour delay="0" duration="1000" enabled="" negative="" repeatCount="-1" type="behaviour\custom\RotateAnimationBehaviour" when="HOVER"/>
-    <behaviour animated="1" direction="ALL" enabled="" gridX="1" gridY="1" limitedByParent="" opacity="0.5" opacityEnabled="" type="behaviour\custom\DraggingBehaviour"/>
-  </target>
-</behaviours>
+<behaviours/>
