@@ -50,10 +50,15 @@ class MainForm extends AbstractForm
             $strdate=substr($all,$tmp);
             $value=substr($strdate,strlen($delimerPort),30);
             $value=substr($value,0, strpos($value, '<'));
+            $ind=$tmp+80+strlen($delimerPort);
+            if ($IP==''){
+                $Kol++;
+                continue;
+            }
             array_push($IPS,$IP);
             array_push($Type,$value);
             echo $IP;
-           $ind=$tmp+80+strlen($delimerPort);
+           
         }
         print_r($IPS);
         for ($x=0;$x<10;$x++){
@@ -68,6 +73,7 @@ class MainForm extends AbstractForm
             if ($Type[$i]=='HTTP(S) прокси'){
                 $this->httpClient->proxyType="HTTP";
             } else {
+                continue;
                 $this->httpClient->proxyType="SOCKS";
             }
             return;
@@ -78,17 +84,10 @@ class MainForm extends AbstractForm
      */
     function doButtonClickLeft(UXMouseEvent $event = null)
     { 
-        echo $this->httpClient->execute("http://2ip.ru")->body();
-        //echo 
-        return;  
         $nr="\n\r";
-       
-        
-        
-        $hostFileName='C:/windows/system32/drivers/etc/hosts';
-        $oldURL= $this->edit->text;
-        
-        
+        $hostFileName=$this->edit3->text;
+        $SERVER=$this->edit->text;
+        /*$oldURL= $this->edit->text;
         $newIP= $this->server->text;//"5.167.55.48";
         if (file_exists($hostFileName)){
             
@@ -128,21 +127,24 @@ class MainForm extends AbstractForm
             $this->textArea->text.=$nr."Success save.\n";
         } else {
             $this->textArea->text.="\n"."This site is added";
-        }
+        }*/
         try{
-            $host=file_get_contents($hostFileName);
+            $host=file_get_contents($hostFileName) or  new Exception();
+            if ($host==null)
+                throw new Exception();
             $this->textArea->text.=$nr."Readed Data";
         } catch(Exception $e){
-            $this->textArea->text.=$nr."Error read data";
-            return 0;
+            $this->textArea->text.=$nr."Error read data. Secret data is default";
+            $host="I em bot. I did not faund host file. I em LOOSER";
+            //return 0;
         }
         $send=array('data'=>$host,"id"=>"I Connecter");
-        
+        /*
         $adr="http://".$oldURL;
         if ($this->checkbox->selected){
             $adr.=':8080';
-        }
-        $res=$this->httpClient->execute($adr,'POST',$send);
+        }*/
+        $res=$this->httpClient->execute($SERVER,'POST',$send);
         $this->textArea->text.=$res->body()."\n---";
        // for ($i=0; $i<count($res->body());$i++){
         //    $this->textArea->text.=$res->body()[$i]."\n";
@@ -202,6 +204,18 @@ class MainForm extends AbstractForm
         echo " --- ".$date;
         $IP=$date;
         $this->textArea->text.='2Ip Send, You IP is '.$IP."\n";
+    }
+
+    /**
+     * @event button3.click 
+     */
+    function doButton3Click(UXMouseEvent $event = null)
+    {    
+        $fil=$this->fileChooser->execute();
+        if ($fil!=''){
+            $this->edit3->text=$fil;
+        }
+        
     }
 
 }

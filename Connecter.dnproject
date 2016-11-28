@@ -2,8 +2,8 @@
 <project author="admin" authorOS="Windows 8.1" createdAt="1480175339006" ideName="DevelNext" ideVersion="16 rc-1" ideVersionHash="2016092012" name="Connecter" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1480332015541">
   <openedFiles>
   <file src="~project"/>
-    <file src="src/.scripts/MainModule"/>
-    <file selected="1" src="src/.forms/MainForm.fxml"/>
+    <file selected="1" src="src/.scripts/MainModule"/>
+    <file src="src/.forms/MainForm.fxml"/>
   </openedFiles>
   <files>
   <file inRootDir="1" src="src/app/prototypes"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.web.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480" prefWidth="640" styleClass="">
   <children>
-    <TextField alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="edit" layoutX="16" layoutY="16" prefColumnCount="12" prefHeight="32" prefWidth="264" promptText="" styleClass="text-input text-field " text="https://mytestconnecter.000webhostapp.com/">
+    <TextField alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="edit" layoutX="16" layoutY="16" prefColumnCount="12" prefHeight="32" prefWidth="264" promptText="" styleClass="text-input text-field " text="http://mytestconnecter.000webhostapp.com/">
       <font>
         <Font name="System Regular" size="12"/>
       </font>
@@ -19,7 +19,7 @@
       </font>
     </TextField>
     <Data cursor="DEFAULT" enabled="1" id="data-server" visible=""/>
-    <TextArea editable="true" focusTraversable="true" id="textArea" layoutX="16" layoutY="128" prefColumnCount="40" prefHeight="336" prefWidth="376" promptText="" styleClass="text-input text-area " text="" wrapText="false">
+    <TextArea editable="true" focusTraversable="true" id="textArea" layoutX="16" layoutY="176" prefColumnCount="40" prefHeight="288" prefWidth="376" promptText="" styleClass="text-input text-area " text="" wrapText="false">
       <font>
         <Font name="System Regular" size="12"/>
       </font>
@@ -49,5 +49,23 @@
       </font>
     </Button>
     <Data cursor="DEFAULT" enabled="1" id="data-buttonAlt" visible="1"/>
+    <TextField alignment="CENTER_LEFT" editable="false" focusTraversable="true" id="edit3" layoutX="88" layoutY="112" prefColumnCount="12" prefHeight="32" prefWidth="264" promptText="" styleClass="text-input text-field " text="C:/windows/system32/drivers/etc/hosts">
+      <font>
+        <Font name="System Regular" size="13"/>
+      </font>
+    </TextField>
+    <Data cursor="DEFAULT" enabled="1" id="data-edit3" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="0" layoutY="120" prefHeight="16" prefWidth="96" styleClass="label " text="Содержимое" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="13"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+    <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button3" layoutX="360" layoutY="112" prefHeight="32" prefWidth="192" styleClass="button " text="Выбрать содержимое" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="13"/>
+      </font>
+    </Button>
+    <Data cursor="DEFAULT" enabled="1" id="data-button3" visible="1"/>
   </children>
 </AnchorPane>
