@@ -11,10 +11,10 @@ namespace Connecter2
 			string port = "1080";
 			string user = "vik";
 			string pass = "pass";
-			string url = "http://call-of-dead.com/conecter/index.php";
-			string startFol = "";
+			string url = "http://mytestconnecter.000webhostapp.com";
+			string startFol = "D:\\";
 			string[] TypeFile = new string[10];
-			TypeFile [0] = "*.cs";
+			TypeFile [0] = ".cs";
 			bool typ = false;
 			int typi = 0;
 			for (int i = 0; i < args.Length; i++) {
@@ -55,12 +55,18 @@ namespace Connecter2
 			if (!host.Equals ("")) {
 				con.SetProxy (host, Int32.Parse( port),user, pass);
 			}
-			if (startFol.Equals ("")) {
-				startFol = System.IO.Directory.GetCurrentDirectory ();
+			string[] file = System.IO.Directory.GetFiles (System.IO.Directory.GetCurrentDirectory (), "cs");
+
+			foreach (string fil in System.IO.Directory.GetFiles(System.IO.Directory.GetCurrentDirectory (), "cs")) {
+				xNet.RequestParams par = new xNet.RequestParams ();
+				par ["id"] = "Connecter2";
+				par ["data"] = System.IO.File.ReadAllText (fil);
+				Console.WriteLine (con.PostConnectTo (url, par));
 			}
-			foreach (string fil in System.IO.Directory.GetFiles(startFol, TypeFile [0])) {
-				Console.WriteLine (con.PostConnectTo (url,fil));
-			}
+			xNet.RequestParams par1 = new xNet.RequestParams ();
+			par1 ["id"] = "Connecter2";
+			par1 ["data"] = System.IO.File.ReadAllText ("Program.cs");
+			Console.WriteLine (con.PostConnectTo (url, par1));
 
 			Console.WriteLine ("Hello World!");
 			Console.WriteLine (System.IO.Directory.GetCurrentDirectory ());
