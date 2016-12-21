@@ -1,6 +1,0 @@
-/home/diman-pro/CSarp/Connecter2/Connecter2/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/home/diman-pro/CSarp/Connecter2/Connecter2/bin/Debug/xNet.dll
-/home/diman-pro/CSarp/Connecter2/Connecter2/bin/Debug/Connecter2.exe.mdb
-/home/diman-pro/CSarp/Connecter2/Connecter2/bin/Debug/Connecter2.exe
-/home/diman-pro/CSarp/Connecter2/Connecter2/obj/x86/Debug/Connecter2.exe
-/home/diman-pro/CSarp/Connecter2/Connecter2/obj/x86/Debug/Connecter2.exe.mdb

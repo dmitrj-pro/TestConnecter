@@ -1,15 +1,14 @@
 ﻿<Properties StartupItem="Connecter2/Connecter2.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Connecter2/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Connecter2/CONNECTER.cs">
     <Files>
-      <File FileName="Connecter2/Program.cs" Line="45" Column="17" />
-      <File FileName="Connecter2/Connect.cs" Line="58" Column="64" />
+      <File FileName="Connecter2/Program.cs" Line="14" Column="1" />
+      <File FileName="Connecter2/Connect.cs" Line="48" Column="4" />
+      <File FileName="Connecter2/CONNECTER.cs" Line="112" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/home/diman-pro/CSarp/Connecter2/Connecter2/Program.cs" line="61" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
