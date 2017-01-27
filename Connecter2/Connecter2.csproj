@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Connect\Connecter.cs" />
     <Compile Include="Connect\EmailConnecter.cs" />
+    <Compile Include="Connect\FormConnecter.cs" />
     <Compile Include="Connect\Master.cs" />
     <Compile Include="Connect\ProxyConnecter.cs" />
     <Compile Include="Connect\SearchConnecter.cs" />

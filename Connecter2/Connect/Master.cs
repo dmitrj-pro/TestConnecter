@@ -55,6 +55,17 @@ namespace Connecter2.Sending
                     cons.Add(new ProxyConnecter());
                     continue;
                 }
+                if (args[i].Equals("-form"))
+                {
+                    cons.Add(new FormConnecter());
+                    continue;
+                }
+                if (args[i].Equals("--form"))
+                {
+                    FormConnecter.SetSetting();
+                    sys.Save();
+                    continue;
+                }
 
                 if (args[i].Equals("-type"))
                 {
