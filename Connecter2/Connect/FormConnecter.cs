@@ -17,7 +17,7 @@ namespace Connecter2.Sending
             //string url = "https://docs.google.com/forms/d/e/1FAIpQLSeDPt79sPpuxYhecljV_iPrCRkemMkTAJ3xsaRmYmctgaDM1g/formResponse";
 
             string str = System.IO.File.ReadAllText(filename);
-            DP_SCH_LIB.Crypt cr = new DP_SCH_LIB.Crypt(sys.setting.Get(_n,"pass"));
+            DP_SCH_LIB.CRYPT cr = new DP_SCH_LIB.CRYPT(sys.setting.Get(_n,"pass"));
             str = cr.Enc(str);
             HttpRequest Http = new HttpRequest();
             int i = 0;
